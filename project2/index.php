@@ -8,7 +8,6 @@ if(isset($_SESSION["username"]))
     }
     else
     {
-        echo "anak";
         header("Location: login.php");
         exit();
     }
