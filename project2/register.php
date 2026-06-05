@@ -25,8 +25,7 @@ include "layanan/database.php";
 $username = $_POST["nama"] ?? "";
 $password = $_POST["password"] ?? "";
 
-$db = mysqli_connect("localhost" ,"root" , "" , "mahasiswa");
-$sql = "INSERT INTO maha(GMAIL , PASS) VALUES('$username' , '$password')";
+$sql = "INSERT INTO user(gmail_pengguna , passwords) VALUES('$username' , '$password')";
 
 if(isset($_POST["login"]))
     {
